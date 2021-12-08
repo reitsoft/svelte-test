@@ -7,7 +7,7 @@
 	<title>Svelte - Shop</title>
 </svelte:head>
 
-<div class="p-8 max-w-6xl mx-auto">
+<div class="p-12 max-w-4xl mx-auto flex flex-col items-center">
 	<Navigation />
 	<slot />
 </div>

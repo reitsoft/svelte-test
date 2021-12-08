@@ -11,9 +11,10 @@
 
 <script>
 	export let product;
+  import {fade} from "svelte/transition"
 </script>
 
-<div class="w-full max-w-l overflow-hidden rounded border bg-white shadow">
+<div class="w-full max-w-l overflow-hidden rounded border bg-white shadow" transition:fade>
   <div class="relative">
     <div class="h-72 mt-4 mb-4 bg-contain bg-no-repeat bg-center"
       style="background-image: url({product.image})">

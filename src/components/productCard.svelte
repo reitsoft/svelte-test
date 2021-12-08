@@ -1,8 +1,9 @@
 <script>
   export let product;
+  import {fade} from "svelte/transition"
 </script>
 
-<div class="bg-white shadow-md hover:shadow-lg border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700" >
+<div class="bg-white shadow-md hover:shadow-lg border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center" transition:fade>
   <img class="rounded-t-lg p-6 h-60" src={product.image} alt="" />
   <div class="p-2 text-center">
      <h5 class="text-gray-900 p-6 font-bold text-xl tracking-tight mb-2 dark:text-white">{product.title}</h5>
